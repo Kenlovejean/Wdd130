@@ -63,6 +63,12 @@ nav a:hover {
     position: relative;
 }
 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* HERO */
 .hero {
     text-align: center;
