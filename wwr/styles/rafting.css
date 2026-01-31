@@ -43,9 +43,23 @@ img {
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: non;
+    color: black;
+    font-weight: bold;
 }
 
 header img {
@@ -62,6 +76,7 @@ header nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+
 }
 
 /* =========================
@@ -86,10 +101,10 @@ header nav a {
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 25px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .hero article img {
@@ -108,29 +123,56 @@ section {
 section h2 {
     margin-bottom: 1rem;
     color: var(--primary-color);
+    padding: center;
+}
+
+.history-container {
+    position: relative;
+}
+
+.history-container img {
+    width: 100%;
+}
+
+.history-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
 }
 
 /* =========================
    ADVENTURE SECTION
 ========================= */
-section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+.adventure {
+    padding: 2rem;
     text-align: center;
 }
 
-section:nth-of-type(2) h2 {
-    grid-column: 1 / -1;
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-figure img {
-    width: 100%;
+.adventures-gallery img {
+    width: 15%;
+    height: auto;
+}
+
+figure {
+    text-align: center;
 }
 
 figcaption {
-    margin-top: 5px;
-    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+figure {
+    text-align: center;
 }
 
 /* =========================
@@ -159,5 +201,6 @@ footer p {
 }
 
 .socialmedia img {
-    width: 30px;
+    width: 15px;
+    height: auto;
 }
