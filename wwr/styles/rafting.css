@@ -60,7 +60,7 @@ nav a {
     background: white;
     border: 1px solid black;
     font-weight: bold;
-    margin: 10;
+    margin: 10px;
 }
 
 nav a:not(:last-child) {
@@ -117,7 +117,7 @@ section {
 section h2 {
     margin-bottom: 1rem;
     color: var(--primary-color);
-    padding: center;
+    text-align: center;
 }
 
 .history-container {
@@ -151,8 +151,8 @@ section h2 {
     margin-top: 1rem;
 }
 
-.adventures-gallery img {
-    width: 15%;
+.adventure-gallery img {
+    width: 100%;
     height: auto;
 }
 
@@ -163,10 +163,6 @@ figure {
 figcaption {
     margin-top: 0.5rem;
     font-weight: bold;
-}
-
-figure {
-    text-align: center;
 }
 
 /* =========================
@@ -206,10 +202,8 @@ h1 {
 
 /* CONTACT GRID */
 .contact-grid {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin: 0;
 }
 
 /* EMPLOYEES */
@@ -225,7 +219,7 @@ h1 {
 }
 
 .employee-cards figure {
-    text-align: center;
+    display: flex;
     flex-direction: column;
 }
 
@@ -251,12 +245,6 @@ form {
 #contact form {
     max-width: 600px;
     margin: 0 auto;
-}
-
-.form-row {
-    display: flex;
-    margin-bottom: 15px;
-    align-items: center;
 }
 
 .form-row label {
@@ -292,13 +280,9 @@ button:hover {
     padding: 30px;
     margin-top: 40px;
     text-align: center;
-}
-
-.employees {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-top: 20px;
 }
 
 .employees img {
@@ -306,7 +290,6 @@ button:hover {
 }
 
 iframe {
-    width: 30%;
     max-width: 300px;
     height: 300px;
     display: block;
@@ -349,52 +332,21 @@ iframe {
 
 /* MAP SIZE */
 .company-info iframe {
-    width: 50%;
+    width: 100%;
     max-width: 500px;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 5px;
     display: flex;
 }
 
-/* FORM STYLE */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 2rem;
 }
 
-form input,
-form textarea {
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-form textarea {
-    min-height: 50px;
-}
-
-button {
-    padding: 5px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #ddd;
-}
-
-/* Make page full height */
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    flex: 1;
+.trip-grid img {
+    width: 100%;
 }
